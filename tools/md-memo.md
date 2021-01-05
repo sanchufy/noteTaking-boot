@@ -1,5 +1,5 @@
 
-Markdown 备忘小贴士
+**Markdown 备忘小贴士**
 
 ---
 
@@ -7,13 +7,14 @@ Markdown 备忘小贴士
 - [链接](#链接)
 - [锚点](#锚点)
 - [公式](#公式)
+- [语法高亮](#语法高亮)
 - [+HTML](#+html)
 - [Github Flavored Markdown](#gfm)
 - [Pandoc](#pandoc)
 
 ## 符号
 
-在 Word 中，输入 Unicode 码，再按 alt + x 即可输出对应符号。
+在 Word 中，输入 Unicode 码，再按 `alt + x` 即可输出对应符号。
 
 - 空格 white space
     + **[en](https://codepoints.net/U+2002)**: 是 **em** 的一半，UTF8 `U+2002 (8194)`、HTML `&nbsp;`。
@@ -46,12 +47,12 @@ Markdown 备忘小贴士
     ```markdown
     # 完整链接
     [a full path](https://www.example.com/figures/fig1.png)
+    
     # 网站内：忽略协议 https 和域名 www.example.com
     [a absolute path](/figures/fig1.png) # 前导斜杠表示网站的根目录
+    
     # 网站内：相对链接
     [a relative path](../figures/fig1.png) # .. 表上一级目录
-    
-    
     ```
 
 在 Github 中一般使用相对路径，便于仓库克隆，并可使用相对链接操作符：
@@ -66,8 +67,11 @@ Markdown 备忘小贴士
 
 ## 公式
 
-    - [Cmd Markdown 公式指导手册](https://www.zybuluo.com/codeep/note/163962)
+- [Cmd Markdown 公式指导手册](https://www.zybuluo.com/codeep/note/163962)
 
+## 语法高亮
+
+- [代码支持列表](https://github.com/github/linguist)
 
 ## +HTML
 
@@ -86,7 +90,7 @@ Markdown 备忘小贴士
     
     ```html
     > quote
-    [—— Author, Year]{style="float:right"}
+    > [—— Author, Year]{style="float:right"}
     ```
 
 * 文本居中
@@ -96,10 +100,19 @@ Markdown 备忘小贴士
     <div align='center'> ~ ~ ~ </div>
     ```
 
+* [脚注](https://github.com/seamusdemora/seamusdemora.github.io/blob/master/GFM_FootnotesWithReturnFeature.md)
+    
+    ```
+    <sup id="a1">[1](#f1)</sup>
+    
+    <b id="f1">1</b> ... [↩](#a1)
+    ```
+
 ## GFM
 
 - [官方教程](https://github.github.com/gfm/)
 - [基本撰写和格式语法](https://docs.github.com/cn/free-pro-team@latest/github/writing-on-github/basic-writing-and-formatting-syntax)
+- [表情符号](https://www.webfx.com/tools/emoji-cheat-sheet/)
 - [README文件语法解读，即Github Flavored Markdown语法介绍](https://github.com/guodongxiaren/README)
 - [Markdown Cheatsheet 中文版](https://gist.github.com/billy3321/1001749662c370887c63bb30f26c9e6e)
 - [[译] GitHub 风格的 Markdown 语法](https://github.com/baixing/FE-Blog/issues/6)
